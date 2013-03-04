@@ -108,11 +108,11 @@ body {
 
 .wrapper {
     background:#f6f4f4;
-    width:90%;
+    width:100%;
     margin:-22px auto 0;
+/*    -webkit-box-shadow:  0 -6px 5px 5px rgba(55, 55, 55, .5);
     -mox-box-shadow: 0 -6px 5px 5px rgba(55, 55, 55, .5);
-    -webkit-box-shadow:  0 -6px 5px 5px rgba(55, 55, 55, .5);
-    box-shadow:  0 -6px 5px 5px rgba(55, 55, 55, .5);
+    box-shadow:  0 -6px 5px 5px rgba(55, 55, 55, .5);*/
     font-family:arial;
 }
 
@@ -126,23 +126,34 @@ body {
 
 header {
     background:#2E5C5C;
-    -webkit-box-shadow:  0 4px 5px 0px rgba(55, 55, 55, .3);
-    box-shadow:  0 4px 5px 0px rgba(55, 55, 55, .3);
+    -webkit-box-shadow:  0 4px 5px 0 rgba(55, 55, 55, .3);
+    -mox-box-shadow: 0 4px 5px 0 rgba(55, 55, 55, .3);
+    box-shadow:  0 4px 5px 0 rgba(55, 55, 55, .3);
     color:#EDEAEA;
     padding:10px 5%;
     height:80px;
 }
 
 header h1 {
-    font-size:24px;
+    font-size:20px;
     float:left;
-    margin:15px 0 0 0;
+    margin:25px 0 0 0;
 }
 
 header h2 {
-    font-size:16px;
+    font-size:14px;
     float:right;
-    margin:27.5px 0 0 0;
+    margin:25px 0 0 0;
+}
+
+header a {
+    display:block;
+    color:#EDEAEA;
+    margin:0 0 4px 0;
+}
+
+header .div {
+    display:none;
 }
 
 /***********************************
@@ -150,8 +161,10 @@ header h2 {
 ************************************/
 
 .blurb {
-    padding:20px 5%;
-    margin:20px 0 0 0;
+    padding:20px 0;
+    width:90%;
+    margin:20px auto 0;
+    max-width:600px;
 }
 
 .blurb img {
@@ -163,24 +176,21 @@ header h2 {
 }
 
 .blurb article {
-    width:90%;
+    width:100%;
     margin:0;
     float:left;
 }
 
 .blurb a {
-    float:none;
+    float:left;
     margin:10px 0;
     width:100%;
+    display:block;
 }
 
 .blurb article p {
     font-size:12px;
-}
-
-.blurb article {
-    width:45%;
-    margin:0 1% 0 0;
+    display:none;
 }
 
 .blurb article h3 {
@@ -193,18 +203,14 @@ header h2 {
     font-size:11px;
 }
 
-.blurb a {
-    float:left;
-    width:11%;
-    display:block;
-}
-
 /***********************************
     Content
 ************************************/
 
 .portfolioBlocks {
-    padding:0 5%;
+    width:90%;
+    margin:0 auto;
+    max-width:600px;
     clear:both;
 }
 
@@ -213,12 +219,16 @@ header h2 {
     padding:0 0 40px 0;
     border-bottom:1px solid #B2B0B0;
     color:#2E5C5C;
+    overflow:hidden;
 }
 
 .portfolioBlocks section img, .portfolioBlocks section article {
-    float:left;
-    width:25%;
-    margin:0 4% 0 0;
+    width:100%;
+    margin:0 0 5px 0;
+}
+
+.portfolioBlocks section img {
+    max-width:600px;
 }
 
 .portfolioBlocks section article {
@@ -228,6 +238,7 @@ header h2 {
 
 .portfolioBlocks section article p {
     margin:0 0 5px 0;
+    display:none;
 }
 
 .portfolioBlocks section article h3 {
@@ -254,15 +265,6 @@ footer {
     -webkit-box-shadow:  0 -4px 5px 0 rgba(55, 55, 55, .3);
     box-shadow:  0 -4px 5px 0 rgba(55, 55, 55, .3);
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -375,191 +377,21 @@ footer {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 1825px) {
+
+@media only screen and (min-width: 960px) {
 
     .blurb {
-        padding:20px 5%;
-        margin:0 0 20px 0;
+        max-width:100%;
     }
 
-    img.banner {
-        border:3px solid #9A4C4C;
-        margin:20px 4% 0 0;
-        float:left;
-        width:37%;
+    .portfolioBlocks {
+        max-width:100%;
     }
 
-    .blurb article p {
-        font-size:12px;
-    }
-
-    .blurb article {
-        float:left;
-        width:45%;
-        margin:0 1% 0 0;
-    }
-
-    .blurb article h3 {
-        margin: 8px 0 1px;
-        font-size:20px;
-    }
-
-    .blurb article span {
-        font-weight:bold;
-        font-size:11px;
-    }
-
-    .blurb a {
-        float:left;
-        width:11%;
-        display:block;
-    }
 
 }
 
-@media only screen and (min-width: 1550px) and (max-width:1824px) {
 
-    .blurb article {
-        font-size:85%;
-    }
-
-}
-
-@media only screen and (max-width: 1549px) {
-
-    .blurb img {
-        float:none;
-        width:100%;
-        margin:15px 0;
-    }
-
-    .blurb article {
-        width:80%;
-        margin:0;
-    }
-
-    .blurb a {
-        width:20%;
-        margin:0;
-    }
-
-}
-
-@media only screen and (max-width: 1313px) {
-
-    .portfolioBlocks section img {
-        width:35%;
-    }
-
-    .portfolioBlocks section article {
-        width:61%;
-    }
-
-}
-
-@media only screen and (max-width: 1170px) {
-
-    .portfolioBlocks section img {
-        width:45%;
-    }
-
-    .portfolioBlocks section article {
-        width:51%;
-    }
-
-}
-
-@media only screen and (max-width: 1050px) {
-
-    .portfolioBlocks section img {
-        width:55%;
-    }
-
-    .portfolioBlocks section article {
-        width:41%;
-    }
-
-}
-
-@media only screen and (max-width: 990px) {
-
-    .blurb a {
-        float:none;
-        margin:10px 0;
-    }
-
-    .portfolioBlocks section img {
-        float:none;
-        margin:5px 0 10px 0;
-        width:100%;
-    }
-
-    .portfolioBlocks section article {
-        width:100%;
-        margin:0;
-    }
-
-}
-
-@media only screen and (max-width: 730px) {
-
-    .blurb img {
-        display:none;
-    }
-
-    .portfolioBlocks section img {
-        float:none;
-        margin:5px 0 10px 0;
-        width:100%;
-    }
-
-    .portfolioBlocks section article {
-        width:100%;
-        margin:0;
-    }
-
-    .portfolioBlocks section article p {
-        display:none;
-    }
-
-}
-
-@media only screen and (max-width: 690px) {
-
-    header .div {
-        display:none;
-    }
-
-    header a {
-        display:block;
-        margin:0 0 5px 0;
-    }
-
-    header h2 {
-        margin:15px 0 0 0;
-    }
-
-}
-
-@media only screen and (max-width: 650px) {
-
-    .blurb p {
-        display:none;
-    }
-
-    .blurb span {
-        display:block;
-        margin:0 0 7px 0;
-    }
-
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
