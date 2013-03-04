@@ -94,38 +94,118 @@ textarea {
    ========================================================================== */
 
 
+/*****MAIN*****/
+body {
+    background:#b2b0b0;
+    /*F#%K 12 pixel ems, I want 10px ems, ez math === win*/
+    font-size:62.5%; /* 10 = x * 16 ?????? 10/16=.625 on a bitch*/
+}
 .wrapper {
-    width:80%;
-    padding:0 5%;
-    margin:0 auto;
+    background:#f6f4f4;
+    width:70%;
+    margin:-22px auto 0;
+    -webkit-box-shadow:  0px -6px 5px 5px rgba(55, 55, 55, .5);
+    box-shadow:  0px -6px 5px 5px rgba(55, 55, 55, .5);
     font-family:arial;
 }
+.clear {
+    clear:both;
+}
 
-header h1, header h2 {
-    display:inline;
+/*****HEADER*****/
+header {
+    background:#2E5C5C;
+    -webkit-box-shadow:  0px 4px 5px 0px rgba(55, 55, 55, .3);
+    box-shadow:  0px 4px 5px 0px rgba(55, 55, 55, .3);
+    color:#EDEAEA;
+    padding:1em 5%;
+    height:8em
 }
 header h1 {
-    font-size:3.66em;
+    font-size:2.4em;
+    float:left;
+    margin-top:1.5em;
 }
 header h2 {
-    font-size:2em;
+    font-size:1.6em;
     float:right;
+    margin-top:2.75em;
 }
-section.banner {
-    background: #00b326; /* Old browsers */
-    background: -moz-linear-gradient(top, #00b326 0%, #00fb35 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#00b326), color-stop(100%,#00fb35)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #00b326 0%,#00fb35 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #00b326 0%,#00fb35 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #00b326 0%,#00fb35 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #00b326 0%,#00fb35 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00b326', endColorstr='#00fb35',GradientType=0 ); /* IE6-9 */
-}
-section.blurb {
-    width:50%;
-}
-.blurb h3 {
 
+/*****BLURB*****/
+.blurb {
+    padding:2em 5%;
+    margin-bottom:2em;
+}
+img.banner {
+    border:3px solid #9A4C4C;
+    margin:2em 4% 0 0;
+    float:left;
+    width:37%;
+}
+.blurb article p {
+    font-size:1.2em;
+}
+.blurb article {
+    float:left;
+    width:45%;
+    margin:0 1% 0 0;
+}
+.blurb article h3 {
+    margin: .8em 0 .1em;
+    font-size:2em;
+}
+.blurb article span {
+    font-weight:bold;
+    font-size:1.1em;
+}
+.blurb a {
+    float:left;
+    width:11%;
+    display:block;
+}
+
+/*****CONTENT*****/
+.portfolioBlocks {
+    padding:0 5%;
+    clear:both;
+}
+.portfolioBlocks section {
+    margin-bottom:4em;
+    padding-bottom:4em;
+    border-bottom:1px solid #B2B0B0;
+    color:#2E5C5C;
+}
+.portfolioBlocks section img, .portfolioBlocks section article {
+    float:left;
+    width:25%;
+    margin:0 4% 0 0;
+}
+.portfolioBlocks section article {
+    width:71%;
+    margin:0;
+}
+.portfolioBlocks section article p {
+    margin:0 0 .5em 0;
+}
+.portfolioBlocks section article h3 {
+    margin:0 0 .5em 0;
+}
+h3 {
+    font-size:1.6em;
+}
+.portfolioBlocks p, .portfolioBlocks a {
+    font-size:1.4em;
+}
+
+/*****FOOTER*****/
+footer {
+    clear:both;
+    height:5em;
+    background:#2E5C5C;
+    margin-top:3em;
+    -webkit-box-shadow:  0px -4px 5px 0px rgba(55, 55, 55, .3);
+    box-shadow:  0px -4px 5px 0px rgba(55, 55, 55, .3);
 }
 
 
